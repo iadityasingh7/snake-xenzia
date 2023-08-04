@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Snake Xenzia</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <header class="header">
+        <h1>SNAKE XENZIA</h1>
+      </header>
+      <section class="flex">
+        <div class="userinfo" id="info"></div>
+        <main class="ground" id="ground"></main>
+        <div class="control flex" id="controlpad">
+          <button
+            class="control-button play-button"
+            id="control-button"
+            data-status="pause"
+          >
+            Play
+          </button>
+          <div>
+            <button class="control-button move-button" id="up-control">
+              UP
+            </button>
+            <div class="flex">
+              <button class="control-button move-button" id="left-control">
+                LEFT
+              </button>
+              <button class="control-button move-button" id="right-control">
+                RIGHT
+              </button>
+            </div>
+            <button class="control-button move-button" id="down-control">
+              DOWN
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="snake-xenzia.js" defer></script>
+  </body>
+</html>

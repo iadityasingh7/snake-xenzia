@@ -1,0 +1,110 @@
+:root {
+  --snake: 5px;
+}
+body {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #848951;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.header {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 15px;
+  text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.8);
+  font-family: monospace, ui-monospace;
+}
+
+.userinfo, .control {
+  flex: 1;
+  margin: 0 20px;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.control-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: background ease 200ms;
+  background: rgba(0,0,0,0.05);
+}
+
+.play-button {
+  width: 160px;
+  height: 60px;
+  color: brown;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.move-button {
+  width: 90px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  margin-top: 10px;
+  color: maroon;
+}
+
+.control-button:hover {
+  background: rgba(0,0,0,0.1);
+} 
+
+.ground {
+  width: 600px;
+  height: 600px;
+  font-size: 10px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: content-box;
+  border: 2px solid #111;
+}
+
+.ground-row {
+  height: var(--snake);
+  border-bottom: 0.1px solid rgba(0,0,0,0.1);
+}
+
+.ground-cell {
+  width: var(--snake);
+  height: var(--snake);
+  max-width: var(--snake);
+  box-sizing: border-box;
+  transition: all ease 10ms;
+  /* border: 1px solid #777777; */
+}
+
+.snake-present {
+  border: 3px solid #171727 !important;
+  border-width: 3px !important;
+}
+
+.snake-head-present {
+  border: 2px solid #171727;
+  border-width: 2px;
+}
+
+.target {
+  border: 3px solid red !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+}
