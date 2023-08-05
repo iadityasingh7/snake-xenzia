@@ -1,6 +1,7 @@
 :root {
   --snake: 5px;
 }
+
 body {
   padding: 20px;
   min-height: 100vh;
@@ -21,7 +22,18 @@ body {
   font-family: monospace, ui-monospace;
 }
 
-.userinfo, .control {
+.wrapper-inner {
+  display: block;
+}
+
+@media screen and (min-width: 400px) {
+  .wrapper-inner {
+    display: flex;
+  }
+}
+
+.userinfo,
+.control {
   flex: 1;
   margin: 0 20px;
   min-height: 100%;
@@ -39,7 +51,7 @@ body {
   border-radius: 3px;
   letter-spacing: 1px;
   transition: background ease 200ms;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .play-button {
@@ -60,8 +72,8 @@ body {
 }
 
 .control-button:hover {
-  background: rgba(0,0,0,0.1);
-} 
+  background: rgba(0, 0, 0, 0.1);
+}
 
 .ground {
   width: 600px;
@@ -75,7 +87,7 @@ body {
 
 .ground-row {
   height: var(--snake);
-  border-bottom: 0.1px solid rgba(0,0,0,0.1);
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
 }
 
 .ground-cell {
